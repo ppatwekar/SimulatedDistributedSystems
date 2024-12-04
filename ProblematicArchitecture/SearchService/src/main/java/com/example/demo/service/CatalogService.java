@@ -22,6 +22,7 @@ public class CatalogService {
 
         BookResponse bookResponse = simulatedNetworkRequest.makeGetRequest(bookServiceUrl, BookResponse.class);
 
+
         catalog.setBooks(bookResponse.getBooks());
         return catalog;
     }
