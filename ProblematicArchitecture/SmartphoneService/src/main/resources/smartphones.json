@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ABC Smartphone",
+    "price": 55
+  },
+  {
+    "name": "Some Smartphone",
+    "price": 78
+  },
+  {
+    "name": "DEF Smartphone",
+    "price": 200
+  },
+  {
+    "name": "GHI Smartphone",
+    "price": 45
+  },
+  {
+    "name": "JKL Smartphone",
+    "price": 12
+  },
+  {
+    "name": "MNO Smartphone",
+    "price": 8000
+  }
+]

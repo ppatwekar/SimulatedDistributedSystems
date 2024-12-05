@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ABC Laptop",
+    "price": 55
+  },
+  {
+    "name": "Some Laptop",
+    "price": 78
+  },
+  {
+    "name": "DEF Laptop",
+    "price": 200
+  },
+  {
+    "name": "GHI Laptop",
+    "price": 45
+  },
+  {
+    "name": "JKL Laptop",
+    "price": 12
+  },
+  {
+    "name": "MNO Laptop",
+    "price": 8000
+  }
+]

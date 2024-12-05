@@ -3,8 +3,8 @@ package com.example.demo.model;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Laptop
-{
+public class Smartphone {
+
     @Getter
     @Setter
     private String name;
@@ -13,8 +13,7 @@ public class Laptop
     @Setter
     private int price;
 
-    public Laptop(String name, int price)
-    {
+    public Smartphone(String name, int price) {
         this.name = name;
         this.price = price;
     }
