@@ -7,10 +7,7 @@ import com.example.denormalizer.service.CatalogDenormalizerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/update")
@@ -24,7 +21,7 @@ public class CatalogController {
         this.catalogDenormalizerService = catalogDenormalizerService;
     }
 
-    @PostMapping("/books")
+    @PutMapping("/books")
     public HttpStatus updateBooks(@RequestBody BooksUpdateRequest booksUpdateRequest){
         logger.info("Received Request to update Books");
         catalogDenormalizerService.updateBooks(booksUpdateRequest.getBooks());
@@ -32,12 +29,12 @@ public class CatalogController {
     }
 
 
-    @PostMapping("/laptops")
+    @PutMapping("/laptops")
     public void updateLaptops(@RequestBody LaptopsUpdateRequest laptopsUpdateRequest){
         catalogDenormalizerService.updateLaptops(null);
     }
 
-    @PostMapping("/smartphones")
+    @PutMapping("/smartphones")
     public void updateSmartphones(@RequestBody SmartphonesUpdateRequest smartphonesUpdateRequest){
         catalogDenormalizerService.updateSmartphones(null);
     }
