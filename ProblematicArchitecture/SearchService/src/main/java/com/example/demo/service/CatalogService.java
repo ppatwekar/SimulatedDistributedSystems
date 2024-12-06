@@ -31,8 +31,8 @@ public class CatalogService {
         Catalog catalog = new Catalog();
 
         BookResponse bookResponse = simulatedNetworkRequest.makeGetRequest(bookServiceUrl, BookResponse.class);
-        LaptopResponse laptopResponse = new simulatedNetworkRequest.makeGetRequest(laptopServiceUrl, LaptopResponse.class);
-        SmartphoneResponse smartPhoneResponse = new simulatedNetworkRequest.makeGetRequest(smartPhoneServiceUrl, SmartphoneResponse.class);
+        LaptopResponse laptopResponse = simulatedNetworkRequest.makeGetRequest(laptopServiceUrl, LaptopResponse.class);
+        SmartphoneResponse smartPhoneResponse = simulatedNetworkRequest.makeGetRequest(smartPhoneServiceUrl, SmartphoneResponse.class);
 
 
         catalog.setBooks(bookResponse.getBooks());

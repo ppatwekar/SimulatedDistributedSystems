@@ -1,6 +1,6 @@
 package com.example.demo.response;
 
-import com.example.demo.model.SmartPhone;
+import com.example.demo.model.Smartphone;
 import lombok.Getter;
 import lombok.Setter;
 
