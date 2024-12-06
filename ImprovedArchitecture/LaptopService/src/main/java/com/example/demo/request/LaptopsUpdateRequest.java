@@ -1,6 +1,6 @@
-package com.example.denormalizer.request;
+package com.example.demo.request;
 
-import com.example.denormalizer.model.Laptop;
+import com.example.demo.model.Laptop;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,7 +8,8 @@ import java.util.List;
 
 public class LaptopsUpdateRequest {
 
-    @Getter @Setter
+    @Getter
+    @Setter
     private List<Laptop> laptops;
 
     public LaptopsUpdateRequest(List<Laptop> laptops) {

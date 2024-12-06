@@ -1,7 +1,6 @@
-package com.example.denormalizer.request;
+package com.example.demo.request;
 
-import com.example.denormalizer.model.Laptop;
-import com.example.denormalizer.model.Smartphone;
+import com.example.demo.model.Smartphone;
 import lombok.Getter;
 import lombok.Setter;
 
