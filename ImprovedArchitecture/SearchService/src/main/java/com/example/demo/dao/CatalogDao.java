@@ -49,6 +49,8 @@ public class CatalogDao {
 
     public Catalog getCatalog() throws IOException {
         Resource resource = resourceLoader.getResource("file:"+catalogFileLocation);
-        return objectMapper.readValue(resource.getInputStream(), Catalog.class);
+        Catalog catalogOutput = objectMapper.readValue(resource.getInputStream(), Catalog.class);
+        logger.info(catalogOutput.toString());
+        return catalogOutput;
     }
 }

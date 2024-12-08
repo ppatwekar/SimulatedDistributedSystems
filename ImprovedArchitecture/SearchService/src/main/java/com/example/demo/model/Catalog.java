@@ -13,6 +13,14 @@ public class Catalog {
     private List<Laptop> laptops;
 
     @Getter @Setter
-    private List<Smartphone> smartPhones;
+    private List<Smartphone> smartphones;
 
+    @Override
+    public String toString() {
+        return "Catalog{" +
+                "books=" + books +
+                ", laptops=" + laptops +
+                ", smartphones=" + smartphones +
+                '}';
+    }
 }

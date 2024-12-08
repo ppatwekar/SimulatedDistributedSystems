@@ -31,11 +31,12 @@ public class CatalogController {
 
     @PutMapping("/laptops")
     public void updateLaptops(@RequestBody LaptopsUpdateRequest laptopsUpdateRequest){
-        catalogDenormalizerService.updateLaptops(null);
+        catalogDenormalizerService.updateLaptops(laptopsUpdateRequest.getLaptops());
     }
 
     @PutMapping("/smartphones")
-    public void updateSmartphones(@RequestBody SmartphonesUpdateRequest smartphonesUpdateRequest){
-        catalogDenormalizerService.updateSmartphones(null);
+    public void updateSmartphones(@RequestBody SmartphonesUpdateRequest smartphonesUpdateRequest)
+    {
+        catalogDenormalizerService.updateSmartphones(smartphonesUpdateRequest.getSmartphones());
     }
 }

@@ -20,8 +20,8 @@ public class SmartphoneController {
         this.denormalizerService = denormalizerService;
     }
 
-   @PutMapping("/books")
-    public ResponseEntity<HttpStatus> updateBooks(@RequestBody SmartphonesUpdateRequest smartphonesUpdateRequest){
+   @PutMapping("/smartphones")
+    public ResponseEntity<HttpStatus> updateSmartphones(@RequestBody SmartphonesUpdateRequest smartphonesUpdateRequest){
         denormalizerService.makeUpdateInDenormalizer(smartphonesUpdateRequest);
         return new ResponseEntity<>(HttpStatus.OK);
    }
