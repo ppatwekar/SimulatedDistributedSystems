@@ -24,13 +24,13 @@ public class CatalogController {
 
     @GetMapping("/")
     public ResponseEntity<Catalog> getCatalog(){
-        long startTime = System.nanoTime();
+        long startTime = System.currentTimeMillis();
 
         Catalog catalog = catalogService.getCatalog();
 
-        long endTime = System.nanoTime();
+        long endTime = System.currentTimeMillis();
 
-        logger.info("TOTAL TIME REQUIRED="+(endTime-startTime)+"ns");
+        logger.info("TOTAL TIME REQUIRED="+(endTime-startTime)+"ms");
 
         return catalog!=null ? new ResponseEntity<>(catalog, HttpStatus.OK) : new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
     }
